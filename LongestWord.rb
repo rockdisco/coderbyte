@@ -1,5 +1,5 @@
 def LongestWord(sen)
-  arr = sen.split
+  arr = sen.split(/[^\w-]+/)
   lwd = arr.max_by { |x| x.length }
   return lwd
 end
