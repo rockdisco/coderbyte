@@ -1,0 +1,7 @@
+def ArrayAdditionI(arr)
+	arr = arr.uniq
+	return arr.inject(:+) == 2*arr.max
+end
+ArrayAdditionI(STDIN.gets)
+
+#최대값이 최대값을 제외한 나머지 원소들의 합이 같은 경우만 검출. 조합은 소화 못함 ㅠㅠ
