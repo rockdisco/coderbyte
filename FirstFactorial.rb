@@ -1,12 +1,5 @@
 def FirstFactorial(num)
-    if num == 0
-      return 1
-    else
-      return num * FirstFactorial(num - 1)
-    end
-
-  return num 
+  num >= 18 ? nil : (1..num).inject(:*)
 end
    
 FirstFactorial(STDIN.gets)  
-
