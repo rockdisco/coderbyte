@@ -1,4 +1,4 @@
 def LetterCapitalize(str)
-  return str.capitalize
+ str.split(' ').map {|x| x.capitalize }.join(' ')
 end
 LetterCapitalize(STDIN.gets)
