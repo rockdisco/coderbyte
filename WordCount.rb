@@ -1,4 +1,4 @@
 def WordCount(str)
-  return str.split.count
+  str.split.count
 end
 WordCount(STDIN.gets)  
