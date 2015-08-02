@@ -1,0 +1,6 @@
+def LetterCountI(str)
+  str.split(" ").max_by { |w| w.count ( w.chars.max_by {|e|w.count(e)} ) }
+end
+LetterCountI(STDIN.gets)
+
+#중복된 문자가 없을 시 -1 출력이 되어야 함
