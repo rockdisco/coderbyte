@@ -1,0 +1,8 @@
+def SwapII(str)
+  arr = str.split(' ')
+  arr.each_index do |i|
+    arr[i].tr!('0-9','9-0') if arr[i-1] == ' '
+  end.join
+    
+end
+SwapII (STDIN.gets)
