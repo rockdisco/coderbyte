@@ -1,9 +1,5 @@
 def PowersofTwo(num)
-  
-  while num   
-  	num /= 2 if num % 2 == 0 
-  
-  return num
-  
+  num=num/2 until num%2 == 1
+  return num==1
 end
-PowersofTwo(STDIN.gets) 
+PowersofTwo(STDIN.gets)
