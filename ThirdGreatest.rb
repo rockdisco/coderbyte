@@ -1,9 +1,11 @@
 def ThirdGreatest(strArr)
-  lwd = strArr.max {|x| x.length } 
+  strArr.reverse
+  
+  lwd = strArr.max_by {|x| x.length } 
   strArr.delete(lwd)
-  lwd = strArr.max {|x| x.length } 
+  lwd = strArr.max_by {|x| x.length } 
   strArr.delete(lwd)
-  lwd = strArr.max {|x| x.length }
-  return lwd
+  
+  return lwd=strArr.max_by {|x| x.length }
 end
 ThirdGreatest(STDIN.gets)           
