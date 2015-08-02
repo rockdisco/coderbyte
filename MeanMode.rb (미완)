@@ -1,0 +1,6 @@
+def MeanMode(arr)
+  mean = arr.inject(:+).fdiv(arr.size)
+  #평균만 계산함. 최빈값은 아직...
+  
+end
+MeanMode(STDIN.gets)
