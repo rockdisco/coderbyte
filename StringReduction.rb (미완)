@@ -1,0 +1,13 @@
+def StringReduction(str)
+arr=str.tr!('a-c','0-2').split('').map(&:to_i).to_a
+i=0
+
+if arr[i] != arr[i+1] 
+  arr[i+1] = -(arr[i].to_i + arr[i+1].to_i) % 3
+  arr.shift
+end
+
+
+return arr
+end
+StringReduction(STDIN.gets)
