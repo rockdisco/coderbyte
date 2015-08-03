@@ -1,5 +1,5 @@
 def DivisionStringified(num1,num2)
-  num = num1/num2
+  num = (num1.to_f/num2).round
   arr = num.to_s.split(//).to_a
   lth = arr.length
   rst = []
@@ -14,5 +14,6 @@ def DivisionStringified(num1,num2)
   end
   
   return rst.join
+
 end
 DivisionStringified(STDIN.gets)
