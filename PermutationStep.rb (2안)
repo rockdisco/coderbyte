@@ -1,0 +1,14 @@
+def PermutationStep(num)
+arr2=[]
+arr = num.to_s.split('').to_a.sort
+arr = arr.permutation(arr.length).to_a.uniq
+  arr.each do |x|
+    arr2 << x.join.to_i
+  end
+rst = arr2.find {|i| i>num }
+
+return rst == nil ? -1 : rst
+end
+PermutationStep(STDIN.gets)
+
+#가능한 조합을 다 조사한 뒤 그 다음 녀석 찾기. 겁나 비효율적인듯.
