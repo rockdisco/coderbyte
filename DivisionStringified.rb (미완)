@@ -17,3 +17,5 @@ def DivisionStringified(num1,num2)
 
 end
 DivisionStringified(STDIN.gets)
+
+#num1, num2가 8자리 이상이면 안 됩니다... 왜죠...
