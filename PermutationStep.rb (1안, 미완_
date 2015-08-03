@@ -1,0 +1,18 @@
+def PermutationStep(num)
+arr = num.to_s.split('').to_a
+
+  for i in (0..arr.length-2)
+    if arr[-i-1].to_i > arr[-i-2].to_i
+      t = arr[-i-1]
+      arr[-i-1] = arr[-i-2]
+      arr[-i-2] = t
+      break
+    end
+  end
+rst = arr.join.to_i
+
+#자리바꾼 뒷자리들 정렬하는 거 추가해야함
+
+return num == rst ? -1 : rst
+end
+PermutationStep(STDIN.gets)
